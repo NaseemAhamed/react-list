@@ -17,7 +17,6 @@ export default function App() {
     setTodos(currentTodos=> [...currentTodos, {id:crypto.randomUUID(), title, completed:false}])
   }
 
-
   function toggleTodo(id, completed) {
     setTodos(currentTodos => {
       return currentTodos.map(todo => {
@@ -38,7 +37,7 @@ export default function App() {
 
   return <>
     <ItemForm addToDoHandler={addTodo}/>
-    <h6 className="header">Items to do</h6>
+    <h2>Items to do</h2>
     <List todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
   </>
 }
