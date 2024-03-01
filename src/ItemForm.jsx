@@ -23,14 +23,14 @@ export default function ItemForm({addToDoHandler}) {
 
         setNewItem("")
     }
-    return <form onSubmit={handleSubmit} className="new-item-form">
-        <div className="form-row">
-            <label htmlFor="item">Item to add</label>
+    return <form onSubmit={handleSubmit} className="new-item-form mb-4">
+        <div className="form-row mb-2">
+            <label htmlFor="item"  className="text-white mr-2">Item to add</label>
             <input
                 value={newItem}
                 onChange={e => setNewItem(e.target.value)}
                 type="text" id="item" />
         </div>
-        <button>Add</button>
+        <button  className="bg-blue-500 text-white px-2 py-1">Add</button>
     </form>
 }
