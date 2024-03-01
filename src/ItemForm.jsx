@@ -31,6 +31,6 @@ export default function ItemForm({addToDoHandler}) {
                 onChange={e => setNewItem(e.target.value)}
                 type="text" id="item" />
         </div>
-        <button  className="bg-blue-500 text-white px-2 py-1">Add</button>
+        <button  className="bg-blue-500 text-white px-2 py-1 rounded">Add</button>
     </form>
 }

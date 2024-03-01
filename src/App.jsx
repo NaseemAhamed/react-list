@@ -46,7 +46,7 @@ export default function App() {
 
   return <>
     <ItemForm addToDoHandler={addTodo} />
-    <h6 className="text-2xl font-extrabold text-white mt-6 mb-4">Items to do</h6>
+    <h6 className="text-1xl font-extrabold text-white mt-6 mb-4">Items to do</h6>
     <List todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
   </>
 }

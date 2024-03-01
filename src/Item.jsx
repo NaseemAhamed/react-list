@@ -7,9 +7,9 @@ export function Item({ id, completed, title,  toggleTodo, deleteTodo}) {
             />
             {title}
         </label>
-        <button className="bg-red-500 text-white px-2 py-1 ml-2"
+        <button className="bg-red-500 text-white px-2 ml-2 rounded"
             //onClick={deleteTodo(id)}  - It executes and sets the result to onClick event. This is not what we expect
             onClick={() => deleteTodo(id)}
-        >Delete</button>
+        >x</button>
     </li>
 }
